@@ -27,14 +27,14 @@ A terminal-based application to manage player balances and transactions in a Mon
 
 2. Build the application:
    ```bash
-   go build -o banker ./cmd/monopoly
+   go build -o monopoly ./cmd/monopoly
    ```
 
 ## Usage
 
 Run the application:
 ```bash
-./banker
+./monopoly
 ```
 
 Follow the on-screen prompts to:
