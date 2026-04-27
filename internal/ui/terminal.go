@@ -7,13 +7,17 @@ import (
 	"os"
 )
 
-func UserInput(text string) string {
-	fmt.Print(text + " ")
-	scanner := bufio.NewScanner(os.Stdin)
+// scanner is reused across all input calls to avoid repeated allocations.
+var scanner = bufio.NewScanner(os.Stdin)
+
+// UserInput displays a styled prompt and returns the user's input.
+func UserInput(prompt string) string {
+	fmt.Printf("  %s▸%s %s ", Cyan, Reset, prompt)
 	scanner.Scan()
 	return scanner.Text()
 }
 
+// ClearScreen resets the terminal viewport using ANSI escape codes.
 func ClearScreen() {
 	fmt.Print("\033[H\033[2J")
 }

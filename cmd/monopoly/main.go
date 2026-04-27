@@ -1,4 +1,4 @@
-package main // Fixed: Lowercase 'package'
+package main
 
 import (
 	"fmt"
@@ -9,7 +9,7 @@ import (
 
 func main() {
 	ui.ClearScreen()
-	fmt.Println("")
+	fmt.Println()
 	playerCount := game.Welcome()
 	players := game.NewPlayers(playerCount)
 	game.Play(players)
