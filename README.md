@@ -21,7 +21,7 @@ A terminal-based application to manage player balances and transactions in a Mon
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/monopoly.git
+   git clone https://github.com/moohalem/monopoly.git
    cd monopoly
    ```
 
