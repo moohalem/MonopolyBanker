@@ -41,11 +41,12 @@ func printCentered(width int, text, style string) {
 	border := Bold + Cyan
 	pad := (width - len(text)) / 2
 	right := width - pad - len(text)
-	fmt.Printf("  %s║%s%s%s%s%s║%s\n",
+	fmt.Printf("  %s║%s%s%s%s%s%s║%s\n",
 		border,
 		strings.Repeat(" ", pad),
 		style, text, Reset,
 		strings.Repeat(" ", right),
+		border,
 		Reset)
 }
 
